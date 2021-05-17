@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Octopus"
+        android:layout_above="@id/mMyButton"
+        android:layout_below="@id/highScore.txt"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/mMyButton"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="147dp"
+        android:background="@android:color/transparent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="High Score"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:id="@+id/highScore.txt"/>
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:id="@+id/VolumeCtrl"
+        android:src="@drawable/ic_baseline_volume_up_24"/>
+
+</RelativeLayout>
